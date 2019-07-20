@@ -2,14 +2,14 @@ package com.db1.db1start;
 
 public class Matematica {
 	
-	public static float dois(float num1, float num2) {
+	public static double dois(double num1, double num2) {
 		if (num1 > num2) {
 			return num2;
 		}
 		return num1;
 	}
 	
-	public static float tres(float num1, float num2, float num3) {
+	public static double tres(double num1, double num2, double num3) {
 		if ((num1 > num2) && (num1 > num3) && (num2 > num3)) {
 			return num3;
 		}

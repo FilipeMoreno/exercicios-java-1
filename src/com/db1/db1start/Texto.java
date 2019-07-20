@@ -2,6 +2,7 @@ package com.db1.db1start;
 
 public class Texto {
 	
+	
 	public static String Maiusculo(String texto) {
 		if (texto != null) {
 			String maiusculo = texto.toUpperCase();
@@ -17,5 +18,5 @@ public class Texto {
 		}
 		return null;
 	}
-
+	
 }
