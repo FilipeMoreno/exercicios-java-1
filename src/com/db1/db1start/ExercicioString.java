@@ -74,16 +74,10 @@ public class ExercicioString {
 	}
 	
 	public String separarTexto(String texto2) {
-		int i, qtd[] = null, cont = 0;
-		for (i = cont; i < texto2.length(); i++) {
-			if (texto2.charAt(i) == ',') {
-				cont++;
-				qtd[cont] = i;
-			}
-		}
-		return texto2.substring(0,qtd[1]) + texto2.substring(qtd[1],qtd[2]) + texto2.substring(qtd[2],qtd[3]); 
-		
-	}
+	String array[] = new String[2];
+	array = texto2.split(",");
+	return array[0] + "\n" + array[1] + "\n" +  array[2];
+}
 		
 }
 

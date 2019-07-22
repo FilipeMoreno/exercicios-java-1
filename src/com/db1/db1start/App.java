@@ -17,10 +17,9 @@ public class App {
 		System.out.println("Maiusculo: " + maiusculo);
 		System.out.println("Minusculo: " + minusculo);
 		
-		double compdois = Matematica.dois(3, 1);
-		double comptres = Matematica.tres(1, 11, 27);
-		System.out.println("Menor entre dois numeros: " + compdois);
-		System.out.println("Menor entre tres numeros: " + comptres);
+		Matematica matematica = new Matematica(300,65,10);
+		System.out.println("Menor entre dois numeros: " + matematica.menorDois());
+		System.out.println("Menor entre tres numeros: " + matematica.menorTres());
 		
 		Calculadora calculadora = new Calculadora(10,20);
 		System.out.println(calculadora.somar());

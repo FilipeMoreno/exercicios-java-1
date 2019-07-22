@@ -71,13 +71,13 @@ public class ExercicioStringTest {
 	@Test
 	public void contarVogais() {
 		int contarVogais = exercicioString.contarVogais();
-		Assert.assertEquals("3", contarVogais);
+		Assert.assertEquals(1, contarVogais);
 	}
 	
 	@Test
 	public void separarTexto() {
-		String separarTexto = exercicioString.separarTexto("Banana, Maça");
-		Assert.assertEquals("Banana", separarTexto);
+		String separarTexto = exercicioString.separarTexto("Banana, Maça, Melancia");
+		Assert.assertEquals("Banana\n Maça\n Melancia", separarTexto);
 	}
 		
 }
