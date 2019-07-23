@@ -52,7 +52,6 @@ public class ExercicioString {
 				return texto2.replace(texto2, "Aluno") + texto2.substring(i,qtdCaracteres);
 			}
 		}
-		
 		return texto2.substring(qtd,qtdCaracteres);
 	}
 	

@@ -1,29 +1,41 @@
 package com.db1.db1start;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class App {
 	
 	public static void main(String[] args ) {
 		
-		int tamanhoDoNome = Nome.tamanho("Filipe Moreno");
-		System.out.println("Tamanho do nome: " + tamanhoDoNome + " caracteres");
+		List<String> nomes = new ArrayList<String>();
 		
-		Integer soma = Inteiro.Soma(10, 20);
-		Integer subtracao = Inteiro.Subtracao(789, 458);
-		System.out.println("Soma: " + soma);
-		System.out.println("Subtracao: " + subtracao);
+		nomes.add("Filipe");
+		nomes.add("Amanda");
+		nomes.add("Michele");
+		nomes.add("Filipe");
+		nomes.add("Filipe");
 		
-		String maiusculo = Texto.Maiusculo("filipe");
-		String minusculo = Texto.Minusculo("FILIPE");
-		System.out.println("Maiusculo: " + maiusculo);
-		System.out.println("Minusculo: " + minusculo);
+		System.out.println(nomes);
+
+		nomes.removeIf(nome -> nome.contentEquals("Filipe"));
+		nomes.add(1, "João");
 		
-		Matematica matematica = new Matematica(300,65,10);
-		System.out.println("Menor entre dois numeros: " + matematica.menorDois());
-		System.out.println("Menor entre tres numeros: " + matematica.menorTres());
+		System.out.println(nomes);
+
+		List<Integer> numeros = new ArrayList<>();
 		
-		Calculadora calculadora = new Calculadora(10,20);
-		System.out.println(calculadora.somar());
-		System.out.println(calculadora.subtrair());
-	}
+		numeros.add(2);
+		numeros.add(3);
+		
+		System.out.println(numeros);
+		
+		List<List<String>> todosOsNomes = new ArrayList<>();
+		
+		System.out.println(todosOsNomes);
+		
+		todosOsNomes.add(nomes);
+		
+		
+		}
 
 } 
